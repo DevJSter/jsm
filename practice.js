@@ -94,3 +94,81 @@ for eg
 
 // Statically Typed
 // Dynamically Typed
+// let message = 'Hello'; // JS is dynamically typed we can change them whenever we want it too!!
+// message = true; We've defined it first it is a string but then assigned a new value to it that is Boolean
+
+
+// Comparison Operators Return True or False <> ==  ;
+
+// Functions:
+/* Functions in JavaScript allow you to define reusable blocks of code. They can take parameters and return values.
+For example: */
+
+// const greet = function(name) {
+//  return `Hello, ${name}!`;
+// };
+
+// console.log(greet("Shubham")); // Output: Hello, Shubham!
+
+// // Conditional Statements:
+// /* Conditional statements help in making decisions in your code. 
+// For example: */
+
+// let age = 20;
+
+// if (age >= 18) {
+//  console.log("You are an adult.");
+// } else {
+//  console.log("You are a minor.");
+// }
+
+// // Loops:
+// /* Loops are used for repeated execution of code blocks.
+// For example: */
+
+// for (let i = 1; i <= 5; i++) {
+//  console.log(`Iteration ${i}`);
+// }
+
+// // Arrays and Array Methods:
+// /* Arrays allow you to store multiple values. JavaScript provides various methods for array manipulation.
+// For example: */
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// console.log(numbers.length); // Output: 5
+// console.log(numbers.push(6)); // Output: 6 (new length of the array)
+// console.log(numbers); // Output: [1, 2, 3, 4, 5, 6]
+
+// // Error Handling:
+// /* JavaScript supports error handling through try, catch, and finally blocks.
+// For example: */
+
+// try {
+//  // Code that might throw an error
+//  throw new Error("This is an error message.");
+// } catch (error) {
+//  console.error(error.message); // Output: This is an error message.
+// } finally {
+//  console.log("This block always executes.");
+// }
+
+// // Object-Oriented Programming (OOP):
+// /* JavaScript supports object-oriented programming concepts like classes and objects.
+// For example: */
+
+// class Person {
+//  constructor(name, age) {
+//      this.name = name;
+//      this.age = age;
+//  }
+
+//  greet() {
+//      console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+//  }
+// }
+
+// let person = new Person("Shubham", 25);
+// person.greet(); // Output: Hello, my name is Shubham and I am 25 years old.
+
+
