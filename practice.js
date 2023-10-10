@@ -44,4 +44,32 @@ but
 const var2 = `${2+2}`;
 
 console.log(var2); //output = 4
+
 */
+
+/*
+Booleans
+true = yes ,correct ,1
+false = no ,incorrect ,0
+
+for eg
+*/
+// const isCool = false;
+
+// if(isCool){
+//  console.log("Hello Dude you're cool");
+// }else{
+//  console.log("Try Later");
+// }
+
+//Null
+
+// const age = null;
+// console.log(age);
+// It is an object basically bug in whole javascript language but still there are larger codebases working on the value of null itself. It's so infuriating
+
+//undefined
+
+// let x;
+// console.log(x);
+
