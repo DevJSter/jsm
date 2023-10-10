@@ -118,22 +118,6 @@ for eg
 //OR || => AT LEAST ONE OPERAND IS TRUE => RETURNS TRUE
 //NOT ! 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Functions:
 /* Functions in JavaScript allow you to define reusable blocks of code. They can take parameters and return values.
 For example: */
@@ -206,3 +190,12 @@ For example: */
 // person.greet(); // Output: Hello, my name is Shubham and I am 25 years old.
 
 
+// The while loop
+
+// while (condition) {
+//  //Statements
+// }
+
+for (let i=0 ; i<10000 ; i++) {
+ console.log(i)
+}
