@@ -34,4 +34,14 @@ const var2 = `Hello ${var1}`;
 
 console.log(var2);  //The output will be Hello Shubham
 
+more uses like
+
+const var2 = `2+2`;
+
+console.log(var2); //output = 2+2
+but 
+
+const var2 = `${2+2}`;
+
+console.log(var2); //output = 4
 */
