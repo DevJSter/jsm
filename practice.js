@@ -100,6 +100,40 @@ for eg
 
 // Comparison Operators Return True or False <> ==  ;
 
+// Strict Equality 
+// a=10;
+// b=10;
+// console.log(a === b);
+
+// console.log( 5 == "5" ) the ooutput is false because the '===' Compares values and data types 
+// Return true only if both are true
+// Loose Equality
+
+// console.log( 5 == "5" ) // the output is true which is strange because the datatypes are different that is why we use strict equality
+
+
+//Logical Operators
+
+//AND &&  All OPERANDS ARE TRUE => RETURNS TRUE
+//OR || => AT LEAST ONE OPERAND IS TRUE => RETURNS TRUE
+//NOT ! 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Functions:
 /* Functions in JavaScript allow you to define reusable blocks of code. They can take parameters and return values.
 For example: */
