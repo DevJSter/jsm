@@ -73,3 +73,20 @@ for eg
 // let x;
 // console.log(x);
 
+//Objects
+// const name = 'Shubham';
+// const age = 25;
+
+const person = {
+ name: 'Shubham',
+ age : 25,
+};
+
+// console.log(person.name); //Shubham
+
+// const arr = [1,2,3,4];
+// console.log(arr);
+
+const date = new Date();
+
+console.log(date); //2023-10-10T13:23:13.649Z
