@@ -196,6 +196,36 @@ For example: */
 //  //Statements
 // }
 
-for (let i=0 ; i<10000 ; i++) {
- console.log(i)
-}
+// for (let i=0 ; i<10000 ; i++) {
+//  console.log(i)
+// }
+
+// Functions excutable reusable nlocks of code
+// Three types of funstions are there
+
+// First is function name (params){};  this keyword can be used in here 
+// function sum(a,b){
+//  return a+b;
+// }
+
+// const result = sum(10000,2558);
+
+// console.log(result);
+
+
+
+// Anonymous function
+
+// const sum = function(a, b) {
+//  return a + b;
+// };
+
+// console.log(sum(256,145));
+
+// Arrow Function
+
+const sum =  (a,b) => {
+  return a+b
+};
+
+console.log(sum(256,145));
