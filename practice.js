@@ -241,4 +241,50 @@ For example: */
 
 // Everything else is true
 
+ 
+// const age  = 19;
+// const isCool = true;
+
+// if (isCool && age > 118) {
+//   console.log("You may enter");
+// }else {
+//   console.log("Fuck off");
+// }
+
+// console.log('Shubham' && 'Arjita' && 1 && 'Tiwari' && 1);
+
+
+//Switch statements
+// const superHero = '11Iron man ';
+
+// switch (superHero) {
+//   case 'Iron man' :
+//     console.log ('I am iron man.....');
+//     break;
+  
+//     case 'thor':
+//       console.log('Mjolnir come back to me');
+//       break;
+    
+//     case 'Black widow':
+//       console.log("Natasha Romonofffffff");
+//       break;
+    
+//     default : console.log('The name is batman');
+
+// }
+
+// Ternary Operator
+
+// eg
+// if (condition) {
+//   //block of code
+// } else {
+//   // block of code
+// }
+
+//condition ? true : false ; // Ternary Operator 
+
+
+
 
