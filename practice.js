@@ -224,8 +224,21 @@ For example: */
 
 // Arrow Function
 
-const sum =  (a,b) => {
-  return a+b
-};
+// const sum =  (a,b) => {
+//   return a+b
+// };
 
-console.log(sum(256,145));
+// console.log(sum(256,145));
+
+// // Falsy values to use in conditional statements and and in loops
+// false
+// 0
+// ''(empty string)
+// null
+// undefined
+// NaN
+
+
+// Everything else is true
+
+
