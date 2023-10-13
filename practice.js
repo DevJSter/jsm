@@ -287,5 +287,8 @@ For example: */
 
 
 
-
+// Functions returns undefined i.e if one return comes first it is going to be retuned!!
 // Arrow Function use cases
+
+
+//
