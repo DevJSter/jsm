@@ -1,1 +1,1 @@
-## All the docs of React Will be here and will be updated continuously!
+## All the docs of React and tailwindCSS Will be here and will be updated continuously!

@@ -291,4 +291,29 @@ For example: */
 // Arrow Function use cases
 
 
-//
+// function add(a,b) {
+  // return a + b ;
+// }
+// If there's nothing inside the function block it will just return undefined
+// console.log(add( 1,3));
+
+// if there are more than one retun statements inside the fuunction the first will be the executed and after first "return" the pointer of the code will be moved out the function block
+
+
+//Arrow functions (they do not have their own 'this' keyword which is not the case with normal function declaration and with the anonymous function declaration) 
+// const square = (number) => {
+//    return number*number ;
+// };
+
+// console.log(square(789));
+
+
+
+
+//if the statemnets looks like the above function it  can also look like 
+
+// const sq1 = (number) => number*number;
+
+
+// console.log(sq1(789))
+
