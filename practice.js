@@ -317,3 +317,33 @@ For example: */
 
 // console.log(sq1(789))
 
+// Parametere and arguments in javascript
+
+// parameteres are used when defining a function (they wont be used out of the function)
+
+// Arguments are tpassed when a func call happens
+
+//for eg
+
+// const sayhii = (name) => {
+//   console.log(`hii , ${name} and he is ${age} years old`);
+// }
+
+//  // so here shubham and 20 are arguments and name and age are parameters
+// sayhii('shubham',20);
+
+// // if we do not pass enough arguments it will return undefined whatever the parameters will be empty
+
+
+// const add = (a,b) => {
+//   return a+b;
+// }
+// // for eg if no two parameters are passed we can set default values of them in the function declaration like this const add = (a=0 , b=0)  so even if the time of function call the program wont retuen values like undefined and Nan(not a number) just like we do in the switch cases PS: Javascript Programming is amzing
+
+// console.log(add(1));
+
+// Fundaments like scope , Hoisting and Closures (named as tricky trios)
+
+
+
+
