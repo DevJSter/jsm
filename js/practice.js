@@ -362,3 +362,8 @@ For example: */
 // }
 
 
+//  Inner function can see the outside of the function 
+
+// There can be variables with same name it can keep running~~!!
+
+// Block scope
