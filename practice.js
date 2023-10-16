@@ -345,5 +345,4 @@ For example: */
 // Fundaments like scope , Hoisting and Closures (named as tricky trios)
 
 
-
-
+// Scope two types of scope (GLOBAL AND PRIVATE)
