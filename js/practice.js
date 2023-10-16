@@ -347,3 +347,18 @@ For example: */
 
 // Global Scope and local scopes
 
+// Scope provides security to our code
+
+// Function defined scope are local and otside the function are global scopes
+
+// Global Scope for eg const name = shubham it is accesible throughout the code 
+// reusable and good but the memory management and the vars can also be chnaged by any function
+//so global scope are accesible to all and can be changed at any time
+
+// Local scope are defined in the function
+//for eg const name = () => [
+//  const name - 'shubhga';
+// the name const can only br used in the function only 
+// }
+
+
