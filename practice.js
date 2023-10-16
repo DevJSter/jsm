@@ -345,4 +345,11 @@ For example: */
 // Fundaments like scope , Hoisting and Closures (named as tricky trios)
 
 
+<<<<<<< Updated upstream
 // Scope two types of scope (GLOBAL AND PRIVATE)
+=======
+// scope shows us accesibility of objects,variables,function at particular part of our code
+
+// Three typesof scope 1. global 2. Function 3. Block
+
+>>>>>>> Stashed changes
