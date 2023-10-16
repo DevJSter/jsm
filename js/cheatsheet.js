@@ -70,5 +70,8 @@ const original = [ 1, 2, 3 ];
 const newOriginal = [...original];
 
 // DEEP CLONING - TWO LEVELS DEEP
-const users = [ { name: 'John', age: 25 }, { name: 'Victor', age: 25 }, { name: 'Adrian', age: 25 } ];
+const users = [ { name: 'John', age: 25 }, 
+                { name: 'Victor', age: 25 },
+                { name: 'Adrian', age: 25 } 
+            ];
 const newUsers = JSON.parse(JSON.stringify(users));

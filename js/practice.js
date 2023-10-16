@@ -345,3 +345,5 @@ For example: */
 // Fundaments like scope , Hoisting and Closures (named as tricky trios)
 
 
+// Global Scope and Nearer scopes
+
