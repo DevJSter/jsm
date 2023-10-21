@@ -367,3 +367,5 @@ For example: */
 // There can be variables with same name it can keep running~~!!
 
 // Block scope
+// Today is 21st October
+// 
