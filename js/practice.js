@@ -357,14 +357,14 @@ For example: */
 
 // Local scope are defined in the function
 //for eg const name = () => [
-//  const name - 'shubhga';
+//  const name - 'shubham';
 // the name const can only br used in the function only 
 // }
 
 
 //  Inner function can see the outside of the function 
 
-// There can be variables with same name it can keep running~~!!
+// There can be variables with same name it can keep running ~~!!
 
 // Block scope
 // Today is 21st October
@@ -393,3 +393,19 @@ For example: */
 // typeof NaN === 'number' // true // this is because of the type coercion
 // ({}) == '[object Object]' // true // this is because of the type coercion
 // [] == '' // true // this is because of the type coercion
+
+// hoisting
+// console.log(name);
+// var name = 'shubham';
+// console.log(name);
+
+// Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compile phase, before the code has been executed. It's important to note that only the declarations are hoisted, not initializations. 
+// If a variable is declared and initialized after using it, the value will be undefined.
+
+// Here's a simple example of hoisting:
+// console.log(myVar); // Output: undefined
+// var myVar = 5;
+// console.log(myVar); // Output: 5
+// In the above code, the variable myVar is hoisted during the compile phase. When console.log(myVar); is executed the first time, 
+// myVar is undefined because only the declaration was hoisted, not the initialization. After myVar is initialized with the value 5,
+// the second console.log(myVar); outputs 5.
