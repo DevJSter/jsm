@@ -485,4 +485,39 @@ const innerFunction = outer();
 innerFunction();
 // In the above example, the inner function has access to the variables in the outer function even after the outer function has returned. This is because the inner function forms a closure around the variables in the outer function's scope.
 
- 
+// Closures are useful to access the variables of the parent scope
+// Closures are useful in hiding implementation details and organizing code
+// Closures are useful in implementing partial applications and currying in JavaScript
+// Closures are useful in implementing function composition in JavaScript
+// Closures are useful in implementing memoization in JavaScript
+// Closures are useful in implementing the module pattern in JavaScript
+// Closures are useful in implementing iterators in JavaScript
+// Closures are useful in implementing asynchronous JavaScript
+// Closures are useful in implementing callbacks, promises, and async/await in JavaScript
+// Closures are useful in implementing event handlers/listeners in JavaScript
+// Closures are useful in implementing the observer pattern in JavaScript
+// Closures are useful in implementing the mediator pattern in JavaScript
+// Closures are useful in implementing the singleton pattern in JavaScript
+// Closures are useful in implementing the factory pattern in JavaScript
+// Closures are useful in implementing the decorator pattern in JavaScript
+// Closures are useful in implementing the command pattern in JavaScript
+// Closures are useful in implementing the strategy pattern in JavaScript
+// Closures are useful in implementing the state pattern in JavaScript
+// Closures are useful in implementing the proxy pattern in JavaScript
+// Closures are useful in implementing the flyweight pattern in JavaScript
+// Closures are useful in implementing the adapter pattern in JavaScript
+// Closures are useful in implementing the iterator pattern in JavaScript
+// Closures are useful in implementing the composite pattern in JavaScript
+// Closures are useful in implementing the facade pattern in JavaScript
+// Closures are useful in implementing the bridge pattern in JavaScript
+// Closures are useful in implementing the builder pattern in JavaScript
+
+// Closures are useful in implementing the chain of responsibility pattern in JavaScript
+// Closures are useful in implementing the interpreter pattern in JavaScript
+
+// Closures are useful in implementing the memento pattern in JavaScript
+// Closures are useful in implementing the visitor pattern in JavaScript
+// Closures are useful in implementing the template method pattern in JavaScript
+// Closures are useful in implementing the observer pattern in JavaScript
+
+//Closures are created every time a function is created, at function creation time
