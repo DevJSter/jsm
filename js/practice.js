@@ -521,15 +521,30 @@ For example: */
 
 //Closures are created every time a function is created, at function creation time
 
-const init = () => {
-  const hobby = "Coding"; //local variable created when init is run
+// const init = () => {
+//   const hobby = "Coding"; //local variable created when init is run
 
-  const displayHobby = () => {  //displayHobby is the inner function, a closure
-    console.log(hobby); //using variable declared in the parent function
-  }
-  return displayHobby();
-}
+//   const displayHobby = () => {  //displayHobby is the inner function, a closure
+//     console.log(hobby); //using variable declared in the parent function
+//   }
+//   return displayHobby();
+// }
 
-console.log(init()); //run the function
+// console.log(init()); //run the function
 
 //Coding undefined (Why??)
+// Strings
+
+// `` //Backtick {Provide way more functionalities than single and double quotes}
+// '' //Single Quotes 
+// "" //Double Quotes
+
+// const sum = (a,b) => {
+//   return a+b;
+// }
+
+// console.log(`The sum is ${sum(10,12)}`); 
+
+const greeet = 'Hii I\'m John Doe';
+// WE can use backslash to escape the single quotes inside the string
+console.log(greeet); // 15
