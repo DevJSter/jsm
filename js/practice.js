@@ -484,3 +484,5 @@ const outer = () => {
 const innerFunction = outer();
 innerFunction();
 // In the above example, the inner function has access to the variables in the outer function even after the outer function has returned. This is because the inner function forms a closure around the variables in the outer function's scope.
+
+ 
