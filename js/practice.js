@@ -461,4 +461,11 @@ For example: */
 // console.log(multiplyByTwo(6)); // Output: 12
 // In the above example, the multiply function is partially applied to create a new function that always multiplies by 2. This is achieved by using the bind method, which creates a new function that, when called, has its this keyword set to the provided value and arguments provided beforehand.
 // The bind method is used to create a new function with the same body and scope as the original function, but with a different this value. The first argument to the bind method is the this value, and the subsequent arguments are the arguments to the original function.
-// The bind method is also useful in implementing function currying in JavaScript. For example:
+// // The bind method is also useful in implementing function currying in JavaScript. For example: 
+
+hoist();
+
+const hoist = () => {
+  console.log("Hoisted");
+};
+// In the above example, the hoist function is called before it is declared. This is possible because of hoisting. During the compile phase, the function declaration is hoisted to the top of the scope, which is why the function call doesn't throw an error.
