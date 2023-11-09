@@ -469,3 +469,18 @@ const hoist = () => {
   console.log("Hoisted");
 };
 // In the above example, the hoist function is called before it is declared. This is possible because of hoisting. During the compile phase, the function declaration is hoisted to the top of the scope, which is why the function call doesn't throw an error.
+
+//Closures are also useful in implementing partial applications and currying in JavaScript. For example:
+const outer = () => {
+  const name = "Shubham";
+  console.log(name);
+  const inner = () => {
+    console.log(name);
+  };
+  return inner;
+}
+
+// console.log(name);
+const innerFunction = outer();
+innerFunction();
+// In the above example, the inner function has access to the variables in the outer function even after the outer function has returned. This is because the inner function forms a closure around the variables in the outer function's scope.
