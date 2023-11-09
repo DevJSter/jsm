@@ -414,3 +414,51 @@ For example: */
 // function myFunction() {
 //  console.log("Hello, World!");
 // }
+
+// Closures
+// function outer() {
+//   const name = 'Shubham';
+//   function inner() {
+//     console.log(name);
+//   }
+//   return inner;
+// }
+
+// const innerFunction = outer();
+// innerFunction();
+// A closure is a function that has access to its outer function's scope even after the outer function has returned. This means a closure can remember and access variables and arguments of its outer function even after the function has finished.
+// In the above example, the inner function has access to the variables in the outer function even after the outer function has returned. This is because the inner function forms a closure around the variables in the outer function's scope.
+// Closures are useful in hiding implementation details and organizing code. For example, a counter function can be implemented using closures:
+
+// function counter() {
+//   let count = 0;
+//   return function() {
+//     count++;
+//     console.log(count);
+//   };
+// }
+
+// const counter1 = counter();
+// counter1(); // Output: 1
+// counter1(); // Output: 2
+// counter1(); // Output: 3
+
+// const counter2 = counter();
+// counter2(); // Output: 1
+// counter2(); // Output: 2
+// counter2(); // Output: 3
+// In the above example, the counter function returns a function that increments and logs the count variable. The counter function forms a closure around the count variable, which is why the count variable is accessible even after the counter function has returned.
+// The counter function can be called multiple times to create multiple counters that are independent of each other. This is because each time the counter function is called, a new closure is created.
+// Closures are also useful in implementing partial applications and currying in JavaScript. For example:
+
+// function multiply(a, b) {
+//   return a * b;
+// }
+
+// const multiplyByTwo = multiply.bind(this, 2);
+// console.log(multiplyByTwo(4)); // Output: 8
+// console.log(multiplyByTwo(5)); // Output: 10
+// console.log(multiplyByTwo(6)); // Output: 12
+// In the above example, the multiply function is partially applied to create a new function that always multiplies by 2. This is achieved by using the bind method, which creates a new function that, when called, has its this keyword set to the provided value and arguments provided beforehand.
+// The bind method is used to create a new function with the same body and scope as the original function, but with a different this value. The first argument to the bind method is the this value, and the subsequent arguments are the arguments to the original function.
+// The bind method is also useful in implementing function currying in JavaScript. For example:
