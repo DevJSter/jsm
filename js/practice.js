@@ -527,7 +527,9 @@ const init = () => {
   const displayHobby = () => {  //displayHobby is the inner function, a closure
     console.log(hobby); //using variable declared in the parent function
   }
-  displayHobby();
+  return displayHobby();
 }
 
-init(); //run the function
+console.log(init()); //run the function
+
+//Coding undefined (Why??)
