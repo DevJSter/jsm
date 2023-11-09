@@ -19,8 +19,7 @@ console.log(singleQuotes); //The output will be Single Quotes only
 const doubleQuotes = "Double Quotes only";
 console.log(doubleQuotes); //The output will be Double Quotes Only
 
-Third is using Backticks eg ``  
-
+Third is using Backticks eg ``  (Backticks are most used in JS)
 const backticks = `Back Ticks`;
 console.log(backticks);  //The output will be Back Ticks
 
@@ -463,26 +462,26 @@ For example: */
 // The bind method is used to create a new function with the same body and scope as the original function, but with a different this value. The first argument to the bind method is the this value, and the subsequent arguments are the arguments to the original function.
 // // The bind method is also useful in implementing function currying in JavaScript. For example: 
 
-hoist();
+// hoist();
 
-const hoist = () => {
-  console.log("Hoisted");
-};
+// const hoist = () => {
+//   console.log("Hoisted");
+// };
 // In the above example, the hoist function is called before it is declared. This is possible because of hoisting. During the compile phase, the function declaration is hoisted to the top of the scope, which is why the function call doesn't throw an error.
 
 //Closures are also useful in implementing partial applications and currying in JavaScript. For example:
-const outer = () => {
-  const name = "Shubham";
-  console.log(name);
-  const inner = () => {
-    console.log(name);
-  };
-  return inner;
-}
+// const outer = () => {
+//   const name = "Shubham";
+//   console.log(name);
+//   const inner = () => {
+//     console.log(name);
+//   };
+//   return inner;
+// }
 
 // console.log(name);
-const innerFunction = outer();
-innerFunction();
+// const innerFunction = outer();
+// innerFunction();
 // In the above example, the inner function has access to the variables in the outer function even after the outer function has returned. This is because the inner function forms a closure around the variables in the outer function's scope.
 
 // Closures are useful to access the variables of the parent scope
@@ -521,3 +520,14 @@ innerFunction();
 // Closures are useful in implementing the observer pattern in JavaScript
 
 //Closures are created every time a function is created, at function creation time
+
+const init = () => {
+  const hobby = "Coding"; //local variable created when init is run
+
+  const displayHobby = () => {  //displayHobby is the inner function, a closure
+    console.log(hobby); //using variable declared in the parent function
+  }
+  displayHobby();
+}
+
+init(); //run the function
