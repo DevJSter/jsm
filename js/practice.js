@@ -409,3 +409,8 @@ For example: */
 // In the above code, the variable myVar is hoisted during the compile phase. When console.log(myVar); is executed the first time, 
 // myVar is undefined because only the declaration was hoisted, not the initialization. After myVar is initialized with the value 5,
 // the second console.log(myVar); outputs 5.
+// Hoisting also works with function declarations:
+// myFunction(); // Output: Hello, World!
+// function myFunction() {
+//  console.log("Hello, World!");
+// }
