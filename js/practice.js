@@ -671,5 +671,5 @@ For example: */
 // const ex = "   dog   ";
 // console.log(ex.trim()); // dog
 
-const email = '    contact@codecademy.com      ';
-console.log(email.trim()); // 'contact@codecademycom'
+// const email = '    contact@codecademy.com      ';
+// console.log(email.trim()); // 'contact@codecademycom'
