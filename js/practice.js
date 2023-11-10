@@ -524,8 +524,8 @@ For example: */
 // const init = () => {
 //   const hobby = "Coding"; //local variable created when init is run
 
-//   const displayHobby = () => {  //displayHobby is the inner function, a closure
-//     console.log(hobby); //using variable declared in the parent function
+  const displayHobby = () => {  //displayHobby is the inner function, a closure
+    console.log(hobby); //using variable declared in the parent function
 //   }
 //   return displayHobby();
 // }
@@ -549,4 +549,50 @@ For example: */
 // WE can use backslash to escape the single quotes inside the string
 // console.log(greeet); // 15
 
- 
+// const greeet = "Hii I'm John Doe";
+// console.log(greeet); // 15
+const multiplyByTwo = multiply.bind(this, 2);
+console.log(multiplyByTwo(4));
+console.log(multiplyByTwo(5));
+console.log(multiplyByTwo(6));
+
+const hoist = () => {
+  console.log("Hoisted");
+};
+
+hoist();
+
+const outer = () => {
+  const name = "Shubham";
+  console.log(name);
+  const inner = () => {
+    console.log(name);
+  };
+  return inner;
+}
+
+console.log(name);
+const innerFunction = outer();
+innerFunction();
+
+const init = () => {
+  const hobby = "Coding";
+  const displayHobby = () => {
+    console.log(hobby);
+  }
+  return displayHobby();
+}
+
+console.log(init());
+
+const sum = (a,b) => {
+  return a+b;
+}
+
+console.log(`The sum is ${sum(10,12)}`); 
+
+const greeet = 'Hii I\'m John Doe';
+console.log(greeet);
+
+const greeet = "Hii I'm John Doe";
+console.log(greeet);
