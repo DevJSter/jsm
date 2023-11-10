@@ -644,15 +644,15 @@ For example: */
 // const wx = hobbies.slice(-10, -6);
 
 //Split a string
-const ex = "dog";
+// const ex = "dog";
 
-console.log(ex.split('')); // ["d", "o", "g"]
+// console.log(ex.split('')); // ["d", "o", "g"]
 // Split is a method in JavaScript which can convert a string into an array.(Frankly saying it is a method which can convert a string into an array)
 
-const ex1 = "The quick brown fox jumps over the lazy dog.";
-const words = ex1.split(' ');
-console.log(words); //It will only split the string where it finds the space and will convert it into an array
+// const ex1 = "The quick brown fox jumps over the lazy dog.";
+// const words = ex1.split(' ');
+// console.log(words); //It will only split the string where it finds the space and will convert it into an array
 
 //But 
-const w1 = ex1.split('');
-console.log(w1); //It will split the string into an array of characters
+// const w1 = ex1.split('');
+// console.log(w1); //It will split the string into an array of characters
