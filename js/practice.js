@@ -601,10 +601,10 @@ For example: */
 // console.log(name.length); // 8
 // console.log(name1[name1.length - 1]);
 
-// console.log(name.toUpperCase()); // JOHN
+// // console.log(name.toUpperCase()); // JOHN
 
-const name1 = "John";
-console.log(name1.toUpperCase()); //john
+// const name1 = "John";
+// console.log(name1.toUpperCase()); //john
 
 // Searching for a substring in a string
 const hobbies = 'I love HTML CSS  JavaScript';
@@ -622,3 +622,21 @@ const hobbies = 'I love HTML CSS  JavaScript';
 
 const index = hobbies.indexOf('JavaScript');
 console.log(index);
+
+// IndexOf is case sensitive
+// LastIndexOf
+// hobbies.lastIndexOf('love'); // 2
+// LastIndexOf is case sensitive
+
+// Includes() Returns true or false
+hobbies.includes('love'); // true
+
+//startsWith() Returns true or false
+console.log(hobbies.startsWith('I')); // true
+
+//endsWith() Returns true or false
+hobbies.endsWith('JavaScript'); // true
+//Slice() Returns a substring of the string based on the arguments passed.
+const wx = hobbies.slice(7, 11);
+
+console.log(wx);//HTML
