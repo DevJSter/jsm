@@ -673,3 +673,19 @@ For example: */
 
 // const email = '    contact@codecademy.com      ';
 // console.log(email.trim()); // 'contact@codecademycom'
+
+// Guests
+
+const guestList = 'Our Guests names are : emma , jacob, isabella ,ethan';
+// 1. Get a lengh of the string . Store it in a variable callled length
+// 2. Convert the string to lowercase and store it into the lowercaseGuestList and log it to the console
+// 3. Convert the string to uppercase and store it into the uppercaseGuestList log it to the console
+// 4. Check whether 'ETHAN' is on the uppercaseGuestList.
+// Store the answer in a variable called isEthanOnTheList and log it to the console
+//The datatype of the variable should be boolean
+// Create a substring that only contains the following
+//'EMMA, JACOB, ISABELLA' and store it in a variable called substringGuests"
+// Log it to the console
+
+//5. Out of the substring you create create an array of names of the people that are on the List. Store that array in a variable called guests and log it to the console
+
