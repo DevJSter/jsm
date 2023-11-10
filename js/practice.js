@@ -656,3 +656,17 @@ For example: */
 //But 
 // const w1 = ex1.split('');
 // console.log(w1); //It will split the string into an array of characters
+
+// const ex = "Shawty like a melody in my head";  
+// const words = ex.split(' ').reverse().join(' ');
+console.log(words); //It will split the string into an array of characters
+//Repeat() Returns a new string with a specified number of copies of an existing string.
+
+// const gogSays = "Gog says ";
+
+// console.log(gogSays.repeat(3)); // Gog says Gog says Gog says
+
+
+//Trim() Removes whitespace from both ends of a string.
+// const ex = "   dog   ";
+// console.log(ex.trim()); // dog
