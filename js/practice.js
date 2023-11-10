@@ -597,3 +597,28 @@ For example: */
 // const greeet = "Hii I'm John Doe";
 // console.log(greeet);
 
+
+// console.log(name.length); // 8
+// console.log(name1[name1.length - 1]);
+
+// console.log(name.toUpperCase()); // JOHN
+
+const name1 = "John";
+console.log(name1.toUpperCase()); //john
+
+// Searching for a substring in a string
+const hobbies = 'I love HTML CSS  JavaScript';
+//Indexof
+// hobbies.indexOf('love'); // 2
+
+// Returns the position of the first occurrence of a substring.
+
+// @param searchString — 
+// The substring to search for in the string
+
+// @param position — 
+// The index at which to begin searching the String object. 
+// If omitted, search starts at the beginning of the string.
+
+const index = hobbies.indexOf('JavaScript');
+console.log(index);
