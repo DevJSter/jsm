@@ -607,7 +607,7 @@ For example: */
 // console.log(name1.toUpperCase()); //john
 
 // Searching for a substring in a string
-const hobbies = 'I love HTML CSS  JavaScript';
+// const hobbies = 'I love HTML CSS  JavaScript';
 //Indexof
 // hobbies.indexOf('love'); // 2
 
@@ -620,8 +620,8 @@ const hobbies = 'I love HTML CSS  JavaScript';
 // The index at which to begin searching the String object. 
 // If omitted, search starts at the beginning of the string.
 
-const index = hobbies.indexOf('JavaScript');
-console.log(index);
+// const index = hobbies.indexOf('JavaScript');
+// console.log(index);
 
 // IndexOf is case sensitive
 // LastIndexOf
@@ -629,14 +629,30 @@ console.log(index);
 // LastIndexOf is case sensitive
 
 // Includes() Returns true or false
-hobbies.includes('love'); // true
+// hobbies.includes('love'); // true
 
 //startsWith() Returns true or false
-console.log(hobbies.startsWith('I')); // true
+// console.log(hobbies.startsWith('I')); // true
 
 //endsWith() Returns true or false
-hobbies.endsWith('JavaScript'); // true
+// hobbies.endsWith('JavaScript'); // true
 //Slice() Returns a substring of the string based on the arguments passed.
-const wx = hobbies.slice(7, 11);
+// const wx = hobbies.slice(7, 11);
 
-console.log(wx);//HTML
+// console.log(wx);//HTML
+
+// const wx = hobbies.slice(-10, -6);
+
+//Split a string
+const ex = "dog";
+
+console.log(ex.split('')); // ["d", "o", "g"]
+// Split is a method in JavaScript which can convert a string into an array.(Frankly saying it is a method which can convert a string into an array)
+
+const ex1 = "The quick brown fox jumps over the lazy dog.";
+const words = ex1.split(' ');
+console.log(words); //It will only split the string where it finds the space and will convert it into an array
+
+//But 
+const w1 = ex1.split('');
+console.log(w1); //It will split the string into an array of characters
