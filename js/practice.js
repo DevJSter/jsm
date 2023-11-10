@@ -659,7 +659,7 @@ For example: */
 
 // const ex = "Shawty like a melody in my head";  
 // const words = ex.split(' ').reverse().join(' ');
-console.log(words); //It will split the string into an array of characters
+// console.log(words); //It will split the string into an array of characters
 //Repeat() Returns a new string with a specified number of copies of an existing string.
 
 // const gogSays = "Gog says ";
@@ -670,3 +670,6 @@ console.log(words); //It will split the string into an array of characters
 //Trim() Removes whitespace from both ends of a string.
 // const ex = "   dog   ";
 // console.log(ex.trim()); // dog
+
+const email = '    contact@codecademy.com      ';
+console.log(email.trim()); // 'contact@codecademycom'
