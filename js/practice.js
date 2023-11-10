@@ -702,6 +702,6 @@ console.log(isEthanOnTheList); //true
 const substring = uppercaseGuestList.substring(22, 46);
 console.log(substring); //substring() helps to create a substring from the string by giving indexes
 
-
-//5. Out of the substring you create create an array of names of the people that are on the List. Store that array in a variable called guests and log it to the console
-
+//5. Out of the substring you create  an array of names of the people that are on the List. Store that array in a variable called guests and log it to the console
+const array = substring.split(', ');
+console.log(array); //split() helps to create an array from the string by giving a separator
