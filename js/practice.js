@@ -693,14 +693,14 @@ console.log(uppercaseGuestList);
 // 4. Check whether 'ETHAN' is on the uppercaseGuestList.
 // Store the answer in a variable called isEthanOnTheList and log it to the console
 //The datatype of the variable should be boolean
-const isEthanOnTheList = uppercaseGuestList.includes('ETHAN');
+const isEthanOnTheList = uppercaseGuestList.includes('ETHAN'); //includes() helps to find the specific string in the string
 console.log(isEthanOnTheList); //true
 
 // Create a substring that only contains the following
 //'EMMA, JACOB, ISABELLA' and store it in a variable called substringGuests"
 // Log it to the console
 const substring = uppercaseGuestList.substring(22, 46);
-console.log(substring);
+console.log(substring); //substring() helps to create a substring from the string by giving indexes
 
 
 //5. Out of the substring you create create an array of names of the people that are on the List. Store that array in a variable called guests and log it to the console
