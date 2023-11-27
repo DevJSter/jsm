@@ -676,32 +676,53 @@ For example: */
 
 // Guests
 
-const guestList = 'Our Guests names are : emma , jacob, isabella ,ethan';
-// 1. Get a lengh of the string . Store it in a variable callled length
-const length = guestList.length;
-console.log(length);
+// const guestList = 'Our Guests names are : emma , jacob, isabella ,ethan';
+// // 1. Get a lengh of the string . Store it in a variable callled length
+// const length = guestList.length;
+// console.log(length);
 
 // 2. Convert the string to lowercase and store it into the lowercaseGuestList and log it to the console
-const lowercaseGuestList = guestList.toLowerCase();
-console.log(lowercaseGuestList);
+// const lowercaseGuestList = guestList.toLowerCase();
+// console.log(lowercaseGuestList);
 
 // 3. Convert the string to uppercase and store it into the uppercaseGuestList log it to the console
-const uppercaseGuestList = guestList.toUpperCase();
-console.log(uppercaseGuestList);
+// const uppercaseGuestList = guestList.toUpperCase();
+// console.log(uppercaseGuestList);
 
 
 // 4. Check whether 'ETHAN' is on the uppercaseGuestList.
 // Store the answer in a variable called isEthanOnTheList and log it to the console
 //The datatype of the variable should be boolean
-const isEthanOnTheList = uppercaseGuestList.includes('ETHAN'); //includes() helps to find the specific string in the string
-console.log(isEthanOnTheList); //true
+// const isEthanOnTheList = uppercaseGuestList.includes('ETHAN'); //includes() helps to find the specific string in the string
+// console.log(isEthanOnTheList); //true
 
 // Create a substring that only contains the following
 //'EMMA, JACOB, ISABELLA' and store it in a variable called substringGuests"
 // Log it to the console
-const substring = uppercaseGuestList.substring(22, 46);
-console.log(substring); //substring() helps to create a substring from the string by giving indexes
+// const substring = uppercaseGuestList.substring(22, 46);
+// console.log(substring); //substring() helps to create a substring from the string by giving indexes
 
 //5. Out of the substring you create  an array of names of the people that are on the List. Store that array in a variable called guests and log it to the console
-const array = substring.split(', ');
-console.log(array); //split() helps to create an array from the string by giving a separator
+// const array = substring.split(', ');
+// console.log(array); //split() helps to create an array from the string by giving a separator
+
+// const months = ['January','February','March','April','May','June'];
+
+// console.log(months); //datatype of an array is a object in JS
+// console.log(months[5]); //January
+
+// console.log(months.length); //6
+
+// const values =[
+//   'Apple', {
+//     name : 'Shubham',
+//     age : 25
+//   },
+//   () => {
+//     console.log('Hello');
+//   }
+// ];
+
+// for (let i =0 ;i<months.length;i++){
+//   console.log(months[i]);
+// }
