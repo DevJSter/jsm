@@ -2,42 +2,44 @@
 // console.log("Hello",VariableName);
 // console.log("Test");
 
+console.log("Namaste Dunia");
+
+
 // String methods :: Defining strings can be done by three ways in JS
-/* First is using  singleQuotes eg ''  
-const singleQuotes = 'Single Quotes only';
-console.log(singleQuotes); //The output will be Single Quotes only
+// First is using  singleQuotes eg ''  
+// const singleQuotes = 'Single Quotes only';
+// console.log(singleQuotes); //The output will be Single Quotes only
 
-2nd way is using  doubleQuotes eg  ""
-const doubleQuotes = "Double Quotes only";
-console.log(doubleQuotes); //The output will be Double Quotes Only
+// 2nd way is using  doubleQuotes eg  ""
+// const doubleQuotes = "Double Quotes only";
+// console.log(doubleQuotes); //The output will be Double Quotes Only
 
-Third is using Backticks eg ``  (Backticks are most used in JS)
-const backticks = `Back Ticks`;
-console.log(backticks);  //The output will be Back Ticks
+// Third is using Backticks eg ``  (Backticks are most used in JS)
+// const backticks = `Back Ticks`;
+// console.log(backticks + " " + doubleQuotes);  //The output will be Back Ticks
 
+ //The output will be Namaste Dunia
 
-Backticks is most use because we can add javascript i.e we can embedded method i.e embed any else variable inside
-of it(Reusability of any variable) even when we are declaring any Variable 
+// Backticks is most use because we can add javascript i.e we can embedded method i.e embed any else variable inside
+// of it(Reusability of any variable) even when we are declaring any Variable 
 
-For eg:
-const var1 = `Shubham`;
+// For eg:
+// const var1 = `Shubham`;
 
-const var2 = `Hello ${var1}`;
+// const var2 = `Hello ${var1}`;
 
-console.log(var2);  //The output will be Hello Shubham
+// console.log(var2);  //The output will be Hello Shubham
 
-more uses like
+// more uses like
 
-const var2 = `2+2`;
+// const var12 = `2+2`;
 
-console.log(var2); //output = 2+2
-but 
+// console.log(var12); //output = 2+2
+// but 
 
-const var2 = `${2+2}`;
+// const var22 = `${2+2}`;
 
-console.log(var2); //output = 4
-
-*/
+// console.log(var22); //output = 4
 
 /*
 Booleans
@@ -46,7 +48,7 @@ false = no ,incorrect ,0
 
 for eg
 */
-// const isCool = false;
+// const isCool = false; // true the if will run and false the else will run
 
 // if(isCool){
 //  console.log("Hello Dude you're cool");
@@ -81,9 +83,9 @@ for eg
 // const arr = [1,2,3,4];
 // console.log(arr);
 
-// const date = new Date();
+const date1 = new Date();
 
-// console.log(date); //2023-10-10T13:23:13.649Z
+console.log(date1); 
 
 
 // Statically Typed
@@ -92,7 +94,7 @@ for eg
 // message = true; We've defined it first it is a string but then assigned a new value to it that is Boolean
 
 
-// Comparison Operators Return True or False <> ==  ;
+// Comparison Operators Return True or False >< ==  ;
 
 // Strict Equality 
 // a=10;
@@ -105,12 +107,13 @@ for eg
 
 // console.log( 5 == "5" ) // the output is true which is strange because the datatypes are different that is why we use strict equality
 
-
 //Logical Operators
 
 //AND &&  All OPERANDS ARE TRUE => RETURNS TRUE
 //OR || => AT LEAST ONE OPERAND IS TRUE => RETURNS TRUE
 //NOT ! 
+
+
 
 // Functions:
 /* Functions in JavaScript allow you to define reusable blocks of code. They can take parameters and return values.
@@ -142,15 +145,17 @@ For example: */
 //  console.log(`Iteration ${i}`);
 // }
 
-// // Arrays and Array Methods:
-// /* Arrays allow you to store multiple values. JavaScript provides various methods for array manipulation.
-// For example: */
+// Arrays and Array Methods:
+/* Arrays allow you to store multiple values. JavaScript provides various methods for array manipulation.
+For example: */
 
 // let numbers = [1, 2, 3, 4, 5];
 
 // console.log(numbers.length); // Output: 5
 // console.log(numbers.push(6)); // Output: 6 (new length of the array)
 // console.log(numbers); // Output: [1, 2, 3, 4, 5, 6]
+// console.log(numbers.pop());
+// console.log(numbers);
 
 // // Error Handling:
 // /* JavaScript supports error handling through try, catch, and finally blocks.
@@ -180,8 +185,11 @@ For example: */
 //  }
 // }
 
-// let person = new Person("Shubham", 25);
-// person.greet(); // Output: Hello, my name is Shubham and I am 25 years old.
+// let person1 = new Person("Shubham", 25);
+// person1.greet(); // Output: Hello, my name is Shubham and I am 25 years old.
+
+// let person3 = new Person("John",98);
+// person3.greet();
 
 
 // The while loop
@@ -217,9 +225,10 @@ For example: */
 // console.log(sum(256,145));
 
 // Arrow Function
+// const mil = (a,b) => { return a*b };
 
 // const sum =  (a,b) => {
-//   return a+b
+//   return a+b;
 // };
 
 // console.log(sum(256,145));
@@ -393,7 +402,8 @@ For example: */
 // var name = 'shubham';
 // console.log(name);
 
-// Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compile phase, before the code has been executed. It's important to note that only the declarations are hoisted, not initializations. 
+// Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compile phase, 
+// before the code has been executed. It's important to note that only the declarations are hoisted, not initializations. 
 // If a variable is declared and initialized after using it, the value will be undefined.
 
 // Here's a simple example of hoisting:
@@ -602,9 +612,9 @@ For example: */
 // console.log(name1.toUpperCase()); //john
 
 // Searching for a substring in a string
-// const hobbies = 'I love HTML CSS  JavaScript';
-//Indexof
-// hobbies.indexOf('love'); // 2
+// const hobbies = 'I Love HTML CSS  JavaScript';
+// // Indexof
+// hobbies.indexOf('Love'); // 2
 
 // Returns the position of the first occurrence of a substring.
 
