@@ -58,7 +58,9 @@ for eg
 
 // const age = null;
 // console.log(age);
-// It is an object basically bug in whole javascript language but still there are larger codebases working on the value of null itself. It's so infuriating
+
+// It is an object basically bug in whole javascript language but still there are larger codebases working on the
+// value of null itself. It's so infuriating
 
 //undefined
 
