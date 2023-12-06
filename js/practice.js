@@ -776,3 +776,74 @@ console.log(names.indexOf('Doe'));
 
 // 7. Find the position of the name 'Mary' in the array
 console.log(names.indexOf('Mary'));
+
+//8. Array slice - Returns a new array with the elements starting from the given start index and ends at the given end index
+const months1 = ['January','February','March','April','May','June' , 'July' , 'August' , 'September' , 'October' , 'November' , 'December'];
+const winter = months1.slice(0,3); //Returns the new array and does not change the original array
+console.log(winter);
+console.log(months1);
+
+//9. Array splice - Adds removes and replaces elements in the array
+const months2 = ['January','February','March','April','May','June' , 'July' , 'August' , 'September' , 'October' , 'November' , 'December'];
+const summer = months2.splice(5,3); //Returns the removed elements and changes the original array
+console.log(summer);
+console.log(months2);
+const one = months2.splice(0,1,'Shubham','John'); //Returns the removed elements and changes the original array
+
+//for each method in array - Executes a function for each element in the array
+names.forEach((element,i) => {
+  console.log(element,i);
+}); 
+
+
+//For each accepts a callback function as an argument and executes it for each element in the array
+//Here element is the parameter of the function and 
+//  it is the current element of the array that is being processed 
+// in the array and it is optional  
+//Always and Always Returns undefined and does not change the original array 
+
+//Use when
+//When you want to do something with every element in the array
+
+
+//Dont use when 
+//you want to stop or break the loop when a certain condition is met or true
+// you're working with asynchronous code
+
+//Use cases
+//When we want to sum all the elements in the array
+const numbers = [1,2,3,4,5,6,7,8,9,10];
+let sum = 0;
+numbers.forEach((element) => {
+  sum += element;
+});
+console.log(sum);
+
+
+// Array Map -Creates memory in the memory heap and returns a new array with the results of calling a function for every array element
+// --Same as for each but it returns a new array and does not change the original array
+
+const inventory = [
+  {name : 'apples', quantity : 2},
+  {name : 'bananas', quantity : 0},
+  {name : 'cherries', quantity : 5}
+];  
+
+console.log(inventory);
+
+const prices = inventory.map((element) => {
+  return element.quantity;
+});
+const names4 = inventory.map((element) => {
+  return element.name;
+});
+
+console.log(names4);
+console.log(prices);
+//Same struvture as the for each method it also has the callback function as an argument
+
+//Use when
+//When you want to do something with every element in the array and return a new array
+
+//Dont use when
+//you want to stop or break the loop when a certain condition is met or true
