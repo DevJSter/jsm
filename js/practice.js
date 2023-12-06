@@ -737,3 +737,42 @@ For example: */
 const months = ['January','February','March','April','May','June' , 'July' , 'August' , 'September' , 'October' , 'November' , 'December'];
 
 console.log(months); //datatype of an array is a object in JS
+
+//any data type can be stored in an array
+console.log(months[5]); //January
+
+console.log(typeof months); //object
+
+//We can access values using index values in the array
+for (let i =0 ;i<months.length;i++){
+  console.log(months[i]);
+}
+
+// Array methods
+
+const names = ['Shubham','John','Doe','Jane','Doe'];
+
+// 1. Add a new name(element) to the end of the array
+names.push('Mary'); //Returns the new length of the array and changes the original array
+console.log(names);
+
+// 2. Remove the last name(element) from the array
+names.pop(); //Returns the removed element and changes the original array
+console.log(names);
+
+// 3. Add a new name(element) to the beginning of the array
+names.unshift('Mary'); //Returns the new length of the array and changes the original array
+console.log(names);
+
+// 4. Remove the first element from the array
+names.shift(); //Returns the removed element and changes the original array
+console.log(names);
+
+// 5. Find the position of the name 'John' in the array
+console.log(names.indexOf('John')); //Returns the index of the element
+
+// 6. Find the position of the name 'Doe' in the array
+console.log(names.indexOf('Doe'));
+
+// 7. Find the position of the name 'Mary' in the array
+console.log(names.indexOf('Mary'));
