@@ -847,3 +847,55 @@ console.log(prices);
 
 //Dont use when
 //you want to stop or break the loop when a certain condition is met or true
+
+
+// Array-filter
+
+const nums = [-10,25,-45];
+
+nums.filter((element) => {
+  return element > 0;
+ })// Same like another methods filter accepts a callback function as an argument and executes it for each element in the array
+
+// same thing but in for loop
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] > 0) {
+    console.log(nums[i]);
+  }
+}
+
+//More lines in for loop but it performs same thing as the filter method does 
+
+const employeedata = [
+
+  {name : 'Shubham', age : 25, position : 'Developer', salary : 1000},
+  {name : 'John', age : 30, position : 'Designer', salary : 2000},
+  {name : 'Jane', age : 35, position : 'Manager', salary : 3000},
+
+];
+
+const employeesMoreSalary = employeedata.filter((element) => {
+  if (element.salary > 1500) {
+    return true;  
+  }
+});
+
+console.log(employeesMoreSalary);
+/*[
+  { name: 'John', age: 30, position: 'Designer', salary: 2000 },
+  { name: 'Jane', age: 35, position: 'Manager', salary: 3000 }
+] */
+
+//When it returns true it will add the element to the new array and when it returns false it will not add the element to the new array
+
+// To only store the names of the employees with salary more than 1500
+
+const emplyoeenames = employeesMoreSalary.map((element) => {
+  return element.name;
+});
+
+console.log(emplyoeenames); // [ 'John', 'Jane' ]
+
+emplyoeenames.forEach((element) => {
+  console.log(`${names} has a salary more than 1500`);  
+});
