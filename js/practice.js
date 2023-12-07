@@ -734,66 +734,74 @@ For example: */
 
 
 //Array and Array Methods
-const months = ['January','February','March','April','May','June' , 'July' , 'August' , 'September' , 'October' , 'November' , 'December'];
+// const months = ['January','February','March','April','May','June' , 'July' , 'August' , 'September' , 'October' , 'November' , 'December'];
+// // const time = ["Morning", 12 , 15.00]
+// // console.log(time);
 
-console.log(months); //datatype of an array is a object in JS
+// console.log(months); //datatype of an array is a object in JS
 
-//any data type can be stored in an array
-console.log(months[5]); //January
+// //any data type can be stored in an array
+// console.log(months[5]); //June
 
-console.log(typeof months); //object
+// console.log(typeof months); //object
 
-//We can access values using index values in the array
-for (let i =0 ;i<months.length;i++){
-  console.log(months[i]);
-}
+// //We can access values using index values in the array
+// for (let i =1 ;i<=months.length;i++){
+//   console.log(months[i]);
+// }
 
-// Array methods
+// // Array methods
 
-const names = ['Shubham','John','Doe','Jane','Doe'];
+// const names = ['Shubham','John','Doe','Jane','Doe'];
 
-// 1. Add a new name(element) to the end of the array
-names.push('Mary'); //Returns the new length of the array and changes the original array
-console.log(names);
+// // 1. Add a new name(element) to the end of the array
+// names.push('Mary'); //Returns the new length of the array and changes the original array // 6
+// console.log(names);
 
 // 2. Remove the last name(element) from the array
-names.pop(); //Returns the removed element and changes the original array
-console.log(names);
+// names.pop(); //Returns the removed element and changes the original array
+// console.log(names);
 
-// 3. Add a new name(element) to the beginning of the array
-names.unshift('Mary'); //Returns the new length of the array and changes the original array
-console.log(names);
+// // 3. Add a new name(element) to the beginning of the array
+// names.unshift('Mary'); //Returns the new length of the array and changes the original array
+// console.log(names);
 
-// 4. Remove the first element from the array
-names.shift(); //Returns the removed element and changes the original array
-console.log(names);
+// // 4. Remove the first element from the array
+// names.shift(); //Returns the removed element and changes the original array
+// console.log(names);
 
-// 5. Find the position of the name 'John' in the array
-console.log(names.indexOf('John')); //Returns the index of the element
+// // 5. Find the position of the name 'John' in the array
+// console.log(names.indexOf('John')); //Returns the index of the element
 
 // 6. Find the position of the name 'Doe' in the array
-console.log(names.indexOf('Doe'));
+// console.log(names.indexOf('Doe'));
 
-// 7. Find the position of the name 'Mary' in the array
-console.log(names.indexOf('Mary'));
+// // 7. Find the position of the name 'Mary' in the array
+// console.log(names.indexOf('Mary')); //null
 
-//8. Array slice - Returns a new array with the elements starting from the given start index and ends at the given end index
-const months1 = ['January','February','March','April','May','June' , 'July' , 'August' , 'September' , 'October' , 'November' , 'December'];
-const winter = months1.slice(0,3); //Returns the new array and does not change the original array
-console.log(winter);
-console.log(months1);
+// //8. Array slice - Returns a new array with the elements starting from the given start index and ends at the given end index
+// const months1 = ['January','February','March','April','May','June' , 'July' , 'August' , 'September' , 'October' , 'November' , 'December'];
+// const winter = months1.slice(0,3); //Returns the new array and does not change the original array
+// console.log(winter);
+// console.log(months1);
 
-//9. Array splice - Adds removes and replaces elements in the array
-const months2 = ['January','February','March','April','May','June' , 'July' , 'August' , 'September' , 'October' , 'November' , 'December'];
-const summer = months2.splice(5,3); //Returns the removed elements and changes the original array
-console.log(summer);
-console.log(months2);
-const one = months2.splice(0,1,'Shubham','John'); //Returns the removed elements and changes the original array
+// //9. Array splice - Adds removes and replaces elements in the array
+// const months2 = ['January','February','March','April','May','June' , 'July' , 'August' , 'September' , 'October' , 'November' , 'December'];
+// const summer = months2.splice(5,3); //Returns the removed elements and changes the original array
+// console.log(summer);
+// console.log(months2);
+// const one = months2.splice(0,1,'Shubham','John'); //Returns the removed elements and changes the original array
+
 
 //for each method in array - Executes a function for each element in the array
-names.forEach((element,i) => {
-  console.log(element,i);
-}); 
+// let num =0;
+// names.forEach((element) => {
+//   num+= names.indexOf(element);
+  
+// console.log(num);
+// }); 
+
+// console.log(num);
 
 
 //For each accepts a callback function as an argument and executes it for each element in the array
@@ -812,34 +820,34 @@ names.forEach((element,i) => {
 
 //Use cases
 //When we want to sum all the elements in the array
-const numbers = [1,2,3,4,5,6,7,8,9,10];
-let sum = 0;
-numbers.forEach((element) => {
-  sum += element;
-});
-console.log(sum);
+// const numbers = [1,2,3,4,5,6,7,8,9,10];
+// let sum = 0;
+// numbers.forEach((element) => {
+//   sum += element;
+// });
+// console.log(sum);
 
 
 // Array Map -Creates memory in the memory heap and returns a new array with the results of calling a function for every array element
-// --Same as for each but it returns a new array and does not change the original array
+// Same as for each but it returns a new array and does not change the original array
 
-const inventory = [
-  {name : 'apples', quantity : 2},
-  {name : 'bananas', quantity : 0},
-  {name : 'cherries', quantity : 5}
-];  
+// const inventory = [
+//   {name : 'apples', quantity : 2, prices:100},
+//   {name : 'bananas', quantity : 0, prices:40},
+//   {name : 'cherries', quantity : 5, prices:70}
+// ];  
 
-console.log(inventory);
+// console.log(inventory);
 
-const prices = inventory.map((element) => {
-  return element.quantity;
-});
-const names4 = inventory.map((element) => {
-  return element.name;
-});
+// const prices = inventory.map((price) => {
+//   return price.prices;
+// });
+// const names4 = inventory.map((element) => {
+//   return element.name;
+// });
 
-console.log(names4);
-console.log(prices);
+// console.log(names4);
+// console.log(prices);
 //Same struvture as the for each method it also has the callback function as an argument
 
 //Use when
@@ -851,36 +859,36 @@ console.log(prices);
 
 // Array-filter
 
-const nums = [-10,25,-45];
+// const nums = [-10,25,-45];
 
-nums.filter((element) => {
-  return element > 0;
- })// Same like another methods filter accepts a callback function as an argument and executes it for each element in the array
+// nums.filter((element) => {
+//   return element > 0;
+//  })// Same like another methods filter accepts a callback function as an argument and executes it for each element in the array
 
 // same thing but in for loop
-for (let i = 0; i < nums.length; i++) {
-  if (nums[i] > 0) {
-    console.log(nums[i]);
-  }
-}
+// for (let i = 0; i < nums.length; i++) {
+//   if (nums[i] > 0) {
+//     console.log(nums[i]);
+//   }
+// }
 
 //More lines in for loop but it performs same thing as the filter method does 
 
-const employeedata = [
+// const employeedata = [
 
-  {name : 'Shubham', age : 25, position : 'Developer', salary : 1000},
-  {name : 'John', age : 30, position : 'Designer', salary : 2000},
-  {name : 'Jane', age : 35, position : 'Manager', salary : 3000},
+//   {name : 'Shubham', age : 25, position : 'Developer', salary : 1000},
+//   {name : 'John', age : 30, position : 'Designer', salary : 2000},
+//   {name : 'Jane', age : 35, position : 'Manager', salary : 3000},
 
-];
+// ];
 
-const employeesMoreSalary = employeedata.filter((element) => {
-  if (element.salary > 1500) {
-    return true;  
-  }
-});
+// const employeesMoreSalary = employeedata.filter((element) => {
+//   if (element.salary > 1500) {
+//     return true;  
+//   }
+// });
 
-console.log(employeesMoreSalary);
+// console.log(employeesMoreSalary);
 /*[
   { name: 'John', age: 30, position: 'Designer', salary: 2000 },
   { name: 'Jane', age: 35, position: 'Manager', salary: 3000 }
@@ -890,12 +898,16 @@ console.log(employeesMoreSalary);
 
 // To only store the names of the employees with salary more than 1500
 
-const emplyoeenames = employeesMoreSalary.map((element) => {
-  return element.name;
-});
+// const emplyoeenames = employeesMoreSalary.map((element) => {
+//   return element.name;
+// });
 
-console.log(emplyoeenames); // [ 'John', 'Jane' ]
+// console.log(emplyoeenames); // [ 'John', 'Jane' ]
 
-emplyoeenames.forEach((element) => {
-  console.log(`${names} has a salary more than 1500`);  
-});
+// emplyoeenames.forEach((names) => {
+//   console.log(`${names} has a salary more than 1500`);  
+// });
+
+
+
+
