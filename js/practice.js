@@ -908,6 +908,26 @@ For example: */
 //   console.log(`${names} has a salary more than 1500`);  
 // });
 
+// Array-find 
+// const nums = [-10,25,-45];
+// Array find the first value which  satisfies the condition and returns it
+// nums.find((element) => {
+//   return element > 0;
+//  })// Same like another methods filter accepts a callback function as an argument and executes it for each element in the array 
 
+//It is amazing that every array methods
+//makes sense just by hearing their method names
 
+//Array includes
 
+// const array1 = [1, 2, 3];
+
+// console.log(array1.includes(2)); // We check if 2 is present or not
+// //the answer will be true or false
+
+// const pets = ['cat', 'dog', 'bat', 'llama'];
+// console.log(pets.includes('at')); //false - because it is straightforward
+
+// const bookshelf = ['The Great Gatsby', 'Crime and Punishment', 'Great Expectations', 'The Sun Also Rises'];
+
+// console.log(bookshelf.includes('The Great Gatsby')); //true - because it is straightforward
