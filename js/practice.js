@@ -911,6 +911,7 @@ For example: */
 // Array-find 
 // const nums = [-10,25,-45];
 // Array find the first value which  satisfies the condition and returns it
+
 // nums.find((element) => {
 //   return element > 0;
 //  })// Same like another methods filter accepts a callback function as an argument and executes it for each element in the array 
@@ -920,10 +921,10 @@ For example: */
 
 //Array includes
 
-// const array1 = [1, 2, 3];
+const array1 = [1, 2, 3];
 
-// console.log(array1.includes(2)); // We check if 2 is present or not
-// //the answer will be true or false
+console.log(array1.includes(2)); // We check if 2 is present or not
+//the answer will be true or false
 
 // const pets = ['cat', 'dog', 'bat', 'llama'];
 // console.log(pets.includes('at')); //false - because it is straightforward
@@ -951,9 +952,70 @@ console.log(names); // [ 'cat', 'apple', 'Dog', 'Bob', 'Anne' ]
 
 const nums = [1, 2, 3, 4, 5,17,15,14,1,4,1,4,1,4,5,6,56,56,5,65,65,4,54,5,8,7,89,323];
 
-nums.sort((a,b) => {
-  return a-b;
-});
+// nums.sort(); // [ 1, 14, 15, 17, 2, 3, 4, 5 ]
 
 console.log(nums); // [ 1, 1, 1, 1, 14, 15, 17, 2, 3, 4, 4, 4, 4, 5, 5, 5, 54, 56, 56, 6, 65, 65, 7, 8, 89, 323 ]
+
+nums.sort((a,b) => {
+  return a-b;
+}); //for ascending order
+
+console.log(nums);
+
+nums.sort((a,b) => {
+  return b-a;
+}); //for descending order
+
+console.log(nums);
+
+const array = [1, 2, 3, 4, 5];
+
+//Array some ==> returns true if at least one element passes the condition
+
+const greaterThan3S = array.some((element) => { //Basically means are some elements in the array that is greater than 3
+  return element > 3;
+});
+//Comaparison returns booleans
+console.log(greaterThan3S); //true
+//  array every ==> returns true if all the elements pass the condition
+
+const greaterThan3 = array.every((element) => { //Basically means are all the elements in the array that is greater than 3
+  return element > 3;
+});
+//Comaparison returns booleans
+console.log(greaterThan3); //false
+
+//Array reduce
+
+const groceryList = [29,10,45,78,41,35,96,98,42,12];
+
+let total = 0;
+const sum = groceryList.forEach((price) =>{
+ total += price;
+});
+
+console.log(total);
+
+
+//Same thing with array reduce
+
+groceryList.reduce((accumulator,currentVal) => {
+  return accumulator + currentVal;
+},0); //0 is the initial value of the accumulator
+
+const numbs = [1,2,3,4,5,6,7,8,9,10];
+
+const sum1 = numbs.reduce ((acc,val)=> acc + val,0); //It will retuen accumulator in the end of the reduce
+
+console.log(sum1); //55
+//acc = 0 , val = 1 ==> increment the value 0+1 = 1 <=== acc
+//acc = 1 , val = 2 ==> increment the value 1+2 = 3 <=== acc
+//acc = 3 , val = 3 ==> increment the value 3+3 = 6 <=== acc
+//acc = 6 , val = 4 ==> increment the value 6+4 = 10 <=== acc
+//acc = 10 , val = 5 ==> increment the value 10+5 = 15 <=== acc
+//acc = 15 , val = 6 ==> increment the value 15+6 = 21 <=== acc
+//acc = 21 , val = 7 ==> increment the value 21+7 = 28 <=== acc
+//acc = 28 , val = 8 ==> increment the value 28+8 = 36 <=== acc
+//acc = 36 , val = 9 ==> increment the value 36+9 = 45 <=== acc
+//acc = 45 , val = 10 ==> increment the value 45+10 = 55 <=== acc
 
