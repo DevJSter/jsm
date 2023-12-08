@@ -931,3 +931,29 @@ For example: */
 // const bookshelf = ['The Great Gatsby', 'Crime and Punishment', 'Great Expectations', 'The Sun Also Rises'];
 
 // console.log(bookshelf.includes('The Great Gatsby')); //true - because it is straightforward
+//array includes is case sensitive as it is pretty straightforward it recquies exact letterCasing
+
+//Array sort
+//Sorts the string in alphabetical order
+
+const names = ['Anne', 'cat', 'Bob', 'Dog', 'apple'];
+
+names.sort(); //Sort changes the original array and returns the sorted array
+//mutates the original array
+console.log(names); // [ 'Anne', 'Bob', 'Dog', 'apple', 'cat' ]
+
+//Array reverse
+//Reverses the array
+names.reverse(); //reverse changes the original array and returns the reversed array
+//mutates the original array
+console.log(names); // [ 'cat', 'apple', 'Dog', 'Bob', 'Anne' ]
+
+
+const nums = [1, 2, 3, 4, 5,17,15,14,1,4,1,4,1,4,5,6,56,56,5,65,65,4,54,5,8,7,89,323];
+
+nums.sort((a,b) => {
+  return a-b;
+});
+
+console.log(nums); // [ 1, 1, 1, 1, 14, 15, 17, 2, 3, 4, 4, 4, 4, 5, 5, 5, 54, 56, 56, 6, 65, 65, 7, 8, 89, 323 ]
+
