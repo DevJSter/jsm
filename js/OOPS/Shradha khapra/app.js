@@ -8,3 +8,6 @@ const employe = {
 const karanArjun = {
  salary :50000,
 }
+
+
+karanArjun.__proto__ = employe; 
