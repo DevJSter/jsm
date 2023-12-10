@@ -98,3 +98,16 @@ class Engineer extends Person {
 }
 
 
+//Error handling
+
+try {
+ console.log('hello');
+}
+catch (err) { 
+ console.log(err);
+}
+finally {
+ console.log('finally');
+}
+
+
