@@ -40,6 +40,33 @@
 // fortuner.setBrandName('Toyota');
 
 
+//Inheritance
 
+class Parent {
+ hello() {
+  console.log('Hello');
+ }
+}
 
+class Child extends Parent {
+}
+let obj = new Child();
+
+class Person {
+ sleep () {
+  console.log('sleep');
+ }        
+
+ eat() {
+  console.log('eat');
+ }
+
+ work() {
+  console.log('work');
+ }
+
+}
+//If parent and child both has same function even then the child function will be called
+//It is known as overriding
+class Engineer extends Person {}
 
