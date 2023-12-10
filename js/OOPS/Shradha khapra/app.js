@@ -21,15 +21,25 @@
 // TemplateBlueprint
 
 
-class ToyotaCar {
- start (){
-  console.log('start');
- }
- stop(){
-  console.log('stop');
- }
-}
+// class ToyotaCar {
+//  start (){
+//   console.log('start');
+//  }
+//  stop(){
+//   console.log('stop');
+//  }
+
+//  setBrandName(brand) {
+//   this.brand = brand; //this is a keyword which is used to access the current object }
+// }
 
 
-let fortuner = new ToyotaCar();
-let sexcy = new ToyotaCar();
+// let fortuner = new ToyotaCar();
+// let sexcy = new ToyotaCar();
+
+// fortuner.setBrandName('Toyota');
+
+
+
+
+
