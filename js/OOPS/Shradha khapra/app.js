@@ -1,7 +1,10 @@
-const employee = require('./employee');
-const manager = require('./manager');
+const employe = {
+ calcTax() {
+  console.log('Tax rate is 10%');
+ }
+}
 
-console.log(employee);
-console.log(manager);
 
-// Path: employee.js
+const karanArjub = {
+ salary :50000,
+}
