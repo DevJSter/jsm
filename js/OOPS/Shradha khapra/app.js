@@ -42,21 +42,41 @@
 
 //Inheritance
 
-class Parent {
- hello() {
-  console.log('Hello');
- }
-}
+// class Parent {
+//  hello() {
+//   console.log('Hello');
+//  }
+// }
 
-class Child extends Parent {
-}
-let obj = new Child();
+// class Child extends Parent {
+// }
+// let obj = new Child();
+
+// class Person {
+//  sleep () {
+//   console.log('sleep');
+//  }        
+
+//  eat() {
+//   console.log('eat');
+//  }
+
+//  work() {
+//   console.log('work');
+//  }
+
+// }
+// //If parent and child both has same function even then the child function will be called
+// //It is known as overriding
+// class Engineer extends Person {}
+
+//Super keyword
 
 class Person {
- sleep () {
-  console.log('sleep');
- }        
+ constructor(name) {
+  this.name = name;
 
+ }
  eat() {
   console.log('eat');
  }
@@ -66,7 +86,15 @@ class Person {
  }
 
 }
-//If parent and child both has same function even then the child function will be called
-//It is known as overriding
-class Engineer extends Person {}
+
+class Engineer extends Person {
+ constructor(name, branch) {
+  super(name);
+  this.branch = branch;
+ }
+ work() {
+  console.log('work smarter');
+ }
+}
+
 
