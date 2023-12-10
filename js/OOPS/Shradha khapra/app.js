@@ -5,6 +5,6 @@ const employe = {
 }
 
 
-const karanArjub = {
+const karanArjun = {
  salary :50000,
 }
