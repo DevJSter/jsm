@@ -1019,3 +1019,4 @@ console.log(sum1); //55
 //acc = 36 , val = 9 ==> increment the value 36+9 = 45 <=== acc
 //acc = 45 , val = 10 ==> increment the value 45+10 = 55 <=== acc
 
+//Objects in JavaScript
