@@ -70,3 +70,12 @@ const myInterval = setInterval(() => {
 
 
 clearInterval(myInterval);
+
+//setTimeout()
+// const myTimeout = setTimeout(() => {
+//     console.log("Hello World");
+// }, 1000);
+
+// clearTimeout(myTimeout);
+
+//Promises
