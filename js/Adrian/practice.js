@@ -1165,3 +1165,5 @@ console.log(animals32); //[ 'dog', 'cat', 'horse', 'cow' ]
 console.log(animals12); 
 
 // Why changed in another variable even though we pushed in the first variable??
+
+//Because arrays are reference types and they are stored in the heap and they are copied by their reference
