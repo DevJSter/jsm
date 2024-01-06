@@ -28,4 +28,6 @@
 //  var answer = starryPattern(10);
 //  console.log(answer);
 
-// 
+
+// Javascript is Single threaded
+
