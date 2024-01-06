@@ -1095,4 +1095,62 @@ const  employees = {
 
 // object.entries
 const entries = Object.entries(employees);   
-console.log(entries);                      
+console.log(entries);    
+
+// object.freeze //It freezes the object and does not allow to change the values of the object
+// object.seal //It seals the object and does not allow to add new properties to the object
+// object.keys //It returns the keys of the object
+// object.values //It returns the values of the object
+// object.assign //It copies the values of the object to another object
+// object.fromEntries //It creates an object from an array of key value pairs
+
+// const entries = Object.entries(employees);
+// console.log(entries);
+
+// const keys = Object.keys(employees);
+// console.log(keys);
+
+// const values = Object.values(employees);
+// console.log(values);
+
+// const newEmployee = Object.assign({},employees);
+// console.log(newEmployee);
+
+// const newEmployee = Object.fromEntries(entries);
+// console.log(newEmployee);
+
+
+//Value vs Reference Types
+
+//Value Types
+//Number
+//String
+//Boolean 
+//Symbol
+//undefined
+//null
+
+//Reference Types
+//Object
+//Array
+//Function
+
+//Value Types are stored in the stack
+//Reference Types are stored in the heap
+
+//Value Types are copied by their value
+//Reference Types are copied by their reference
+
+const num1 = 1;
+const num2 = num1;
+console.log(num2); //1
+
+const person12 = {
+  name : 'Shubham'
+};
+
+const person32 = person12;
+
+person32.name = 'John';
+
+console.log(person12.name); //John
