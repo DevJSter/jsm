@@ -79,3 +79,22 @@ const myTimeout = setTimeout(() => {
 // clearTimeout(myTimeout);
 
 //Promises
+
+// What is Syncronous code?
+// What is Asyncronous code?
+
+// Syncronous code is code that is executed line by line in the order that it is written.
+// Asyncronous code is code that is executed after a task that runs in the "background" finishes.
+
+// Syncronous code example
+// console.log("Hello");
+// console.log("World");
+
+// Asyncronous code example
+// setTimeout(() => {
+//     console.log("Hello");
+// }, 1000);
+// console.log("World");
+
+// What is a Promise?
+// A promise is an object that represents the eventual completion or failure of an asynchronous operation.
