@@ -98,3 +98,9 @@ const myTimeout = setTimeout(() => {
 
 // What is a Promise?
 // A promise is an object that represents the eventual completion or failure of an asynchronous operation.
+
+
+// const myPromise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve("Hello");
+//     }, 1000);
