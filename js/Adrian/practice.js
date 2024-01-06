@@ -1191,3 +1191,18 @@ console.log(animals103); //[ 'dog', 'cat', 'horse' ]
 
 // deep cloning
 //Cloning Arrays using JSON.stringify() and JSON.parse()
+
+const pperson = {
+  firstName : 'Emma' ,
+  car : {
+    brand : 'BMW',
+    color: 'red',
+    wheels : 4
+  }
+};
+
+const pperson2 = JSON.parse(JSON.stringify(pperson));
+pperson2.car.color = 'blue';
+console.log(pperson2); //{ firstName: 'Emma', car: { brand: 'BMW', color: 'blue', wheels: 4 } }
+console.log(pperson); //{ firstName: 'Emma', car: { brand: 'BMW', color: 'red', wheels: 4 } }
+
