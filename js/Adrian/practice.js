@@ -1188,3 +1188,6 @@ const animals303 = Object.assign([],animals103);
 animals303.push('cow');
 console.log(animals303); //[ 'dog', 'cat', 'horse', 'cow' ]
 console.log(animals103); //[ 'dog', 'cat', 'horse' ]
+
+// deep cloning
+//Cloning Arrays using JSON.stringify() and JSON.parse()
