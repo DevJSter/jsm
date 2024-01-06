@@ -1181,3 +1181,10 @@ console.log(animals102); //[ 'dog', 'cat', 'horse' ]
 
 const nums1 = [1,2,3,4,5,6,7,8,9,10];
 console.log(...nums1); //1 2 3 4 5 6 7 8 9 10
+
+//Another way to copy the array is Object.assign
+const animals103 = ['dog','cat','horse'];
+const animals303 = Object.assign([],animals103);
+animals303.push('cow');
+console.log(animals303); //[ 'dog', 'cat', 'horse', 'cow' ]
+console.log(animals103); //[ 'dog', 'cat', 'horse' ]
