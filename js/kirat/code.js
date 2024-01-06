@@ -43,3 +43,12 @@
 // var ans = Complex(100000);
 
 // console.log(ans);
+
+//extra js
+for (var i = 0; i < 15559; i++) {
+ console.log("Radha");
+}
+
+function count (fitrst, second) {
+ return first + second;
+}
