@@ -1020,3 +1020,18 @@ console.log(sum1); //55
 //acc = 45 , val = 10 ==> increment the value 45+10 = 55 <=== acc
 
 //Objects in JavaScript
+
+const person = {
+  name : 'Shubham',
+  age : 25,
+  hobbies : ['Coding','Reading','Gaming'],
+  greet : function() {
+    console.log('Hello');
+  },
+  address : {
+    city : 'Mumbai',
+    country : 'India'
+  }
+};  
+//Objects in the objects are called nested objects
+console.log(person.address);
