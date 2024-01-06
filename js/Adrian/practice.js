@@ -1039,3 +1039,6 @@ console.log(person);
 
 //Accessing the values of the object
 console.log(person.name); //Shubham
+
+//Square bracket notation
+console.log(person['name']); //Shubham
