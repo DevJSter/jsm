@@ -1167,3 +1167,17 @@ console.log(animals12);
 // Why changed in another variable even though we pushed in the first variable??
 
 //Because arrays are reference types and they are stored in the heap and they are copied by their reference
+
+
+//Shallow Cloning  in JS
+//Cloning Arrays using Spread Operator
+//Cloning Objects using Spread Operator
+
+const animals102 = ['dog','cat','horse']; 
+const animals302 = [...animals12]; //Spread Operator
+animals302.push('cow');
+console.log(animals302); //[ 'dog', 'cat', 'horse', 'cow' ]
+console.log(animals102); //[ 'dog', 'cat', 'horse' ]
+
+const nums1 = [1,2,3,4,5,6,7,8,9,10];
+console.log(...nums1); //1 2 3 4 5 6 7 8 9 10
