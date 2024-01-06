@@ -1042,3 +1042,36 @@ console.log(person.name); //Shubham
 
 //Square bracket notation
 console.log(person['name']); //Shubham
+
+//Accessing the values of the nested object
+console.log(person.address.city); //Mumbai
+
+// Object Methods
+const myObj = {
+  name : 'Shubham',
+  age : 25,
+  hobbies : ['Coding','Reading','Gaming'],
+  greet : function() {
+    console.log('Hello');
+  },
+  address : {
+    city : 'Mumbai',
+    country : 'India'
+  },
+
+  myMethod : () => {
+    console.log('Hello');
+  }, 
+
+  myMehod2 : function() {
+    console.log('Hello');
+  },
+
+  myMethod3 () {
+    console.log('Hello');
+  }
+};
+
+// myObj.myMethod(); //Hello
+// myObj.myMehod2(); //Hello
+// myObj.myMethod3(); //Hello
