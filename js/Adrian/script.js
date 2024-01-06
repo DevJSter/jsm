@@ -104,3 +104,33 @@ const myTimeout = setTimeout(() => {
 //     setTimeout(() => {
 //         resolve("Hello");
 //     }, 1000);
+
+
+//Callbacks
+
+// What is a callback?
+
+// A callback is a function that is passed as an argument to another function and is executed after some operation has been completed.
+
+//Data fetching with callbacks using API
+
+const fetUser = (username, callback) => {
+    setTimeout(() => {
+        console.log("Now we have the data!");
+        callback({ user: username });
+    }, 3000);
+}
+
+const getRepositories = (username, callback) => {
+    setTimeout(() => {
+        console.log("Calling GitHub API...");
+        callback(["repo1", "repo2", "repo3"]);
+    }, 2000);
+}
+
+const getCommits = (repo, callback) => {
+    setTimeout(() => {
+        console.log("Calling GitHub API...");
+        callback(["commit"]);
+    }, 2000);
+}
