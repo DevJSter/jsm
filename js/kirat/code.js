@@ -57,7 +57,9 @@ function count (first, second) {
  return sum;
 }
 
-
+setTimeout(function() {
+ console.log("10 Seconds have passed!");
+},1000)
 
 var ans = count(1, 100);
 console.log(ans);
