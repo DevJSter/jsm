@@ -1154,3 +1154,14 @@ const person32 = person12;
 person32.name = 'John';
 
 console.log(person12.name); //John
+
+
+const animals12 = ['dog','cat','horse'];
+
+const animals32 = animals12;
+
+animals12.push('cow');
+console.log(animals32); //[ 'dog', 'cat', 'horse', 'cow' ]
+console.log(animals12); 
+
+// Why changed in another variable even though we pushed in the first variable??
