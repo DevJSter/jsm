@@ -45,10 +45,19 @@
 // console.log(ans);
 
 //extra js
-for (var i = 0; i < 15559; i++) {
- console.log("Radha");
+// for (var i = 0; i < 15559; i++) {
+//  console.log("Radha");
+// }
+
+function count (first, second) {
+ var sum = 0;
+ for (var i = first; i < second; i++) {
+  sum += i;
+ }
+ return sum;
 }
 
-function count (fitrst, second) {
- return first + second;
-}
+
+
+var ans = count(1, 100);
+console.log(ans);
