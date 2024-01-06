@@ -56,3 +56,17 @@ class Person {
         console.log("walk");
     }
 }
+//Asynchronous JavaScript
+
+// Intervals and timers
+//setInterval()
+//clearInterval()
+//setTimeout()
+//clearTimeout()
+
+const myInterval = setInterval(() => {
+    console.log("Hello World");
+}, 1000);
+
+
+clearInterval(myInterval);
