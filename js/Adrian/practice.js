@@ -1069,6 +1069,9 @@ const myObj = {
 
   myMethod3 () {
     console.log('Hello');
+  },
+  MyName : () => {
+    console.log(this.name);
   }
 };
 
