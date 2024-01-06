@@ -1207,3 +1207,8 @@ console.log(pperson2); //{ firstName: 'Emma', car: { brand: 'BMW', color: 'blue'
 console.log(pperson); //{ firstName: 'Emma', car: { brand: 'BMW', color: 'red', wheels: 4 } }
 
 //Deep cloning destroys the original object and creates a new object by destroying the refereneces
+
+
+
+
+DOM
