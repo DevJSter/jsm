@@ -72,9 +72,9 @@ const myInterval = setInterval(() => {
 clearInterval(myInterval);
 
 //setTimeout()
-// const myTimeout = setTimeout(() => {
-//     console.log("Hello World");
-// }, 1000);
+const myTimeout = setTimeout(() => {
+    console.log("Hello World");
+}, 6000);
 
 // clearTimeout(myTimeout);
 
