@@ -1035,3 +1035,4 @@ const person = {
 };  
 //Objects in the objects are called nested objects
 console.log(person.address);
+console.log(person);
