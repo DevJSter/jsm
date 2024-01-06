@@ -1078,3 +1078,21 @@ const myObj = {
 // myObj.myMethod(); //Hello
 // myObj.myMehod2(); //Hello
 // myObj.myMethod3(); //Hello
+
+// myObj.MyName(); //undefined
+
+const  employees = {
+  id : 1,
+  name : 'Shubham',
+  age : 25,
+  position : 'Developer',
+  salary : 100000,
+}
+
+// const id = employees.id;
+// const name = employees.name;
+// const age = employees.age;
+
+// object.entries
+const entries = Object.entries(employees);   
+console.log(entries);                      
