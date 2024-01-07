@@ -386,7 +386,7 @@ console.log(person2.address.city);
 console.log(person2.address.pincode);
 //Lot of code to access the properties of the object
 
- const { firstname, lastname age address: { city , pincode } } = person2;
+ const { firstname, lastname , age , address: { city , pincode } } = person2;
     console.log(firstname);
     console.log(lastname);
     console.log(city);
