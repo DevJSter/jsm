@@ -392,4 +392,4 @@ console.log(person2.address.pincode);
     console.log(city);
     console.log(pincode);
 
-//Array Destructoring
+// JSM Ends here
