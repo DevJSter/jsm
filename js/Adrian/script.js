@@ -175,8 +175,8 @@ promise
     });
 
 
-//Asyncs and Await
-//Asyncs and Await are syntactic sugar for promises
+//Async and Await
+//Async and Await are syntactic sugar for promises
 //They make asynchronous code look like synchronous code
 //They make asynchronous code easier to read and maintain
 //They are consumable
