@@ -154,3 +154,15 @@ const getCommits = (repo, callback) => {
 // 4. Hard to scale
 // for eg if we want to add another function to the chain we have to add another callback to the chain
 
+//Promises
+//They are objects that either return the result of an asynchronous operation or the failure of the operation.
+//They have 3 states: pending, resolved, rejected
+//They are chainable
+//They are consumable
+
+const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("Hello");
+        reject(new Error("Something went wrong"));
+    }, 2000);
+});
