@@ -134,3 +134,23 @@ const getCommits = (repo, callback) => {
         callback(["commit"]);
     }, 2000);
 }
+
+// callback hell
+
+// fetUser("Adrian", (user) => {
+//     console.log(user);
+//     getRepositories(user.user, (repos) => {
+//         console.log(repos);
+//         getCommits(repos[0], (commits) => {
+//             console.log(commits);
+//         });
+//     });
+// });
+
+// why is callback hell bad?
+// 1. Hard to read
+// 2. Hard to maintain
+// 3. Hard to debug
+// 4. Hard to scale
+// for eg if we want to add another function to the chain we have to add another callback to the chain
+
