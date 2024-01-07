@@ -369,3 +369,27 @@ consoleNum();
 //     });
 
 
+// object Destructoring
+const person2 = {
+    fistname: 'Shubham',
+    lastname: 'Kumar',
+    age: 21,
+    address: {
+        city: 'Mumbai',
+        pincode: 400001
+    }
+};
+
+conmsole.log(person2.firstname);
+console.log(person2.lastname);
+console.log(person2.address.city);
+console.log(person2.address.pincode);
+//Lot of code to access the properties of the object
+
+ const { firstname, lastname age address: { city , pincode } } = person2;
+    console.log(firstname);
+    console.log(lastname);
+    console.log(city);
+    console.log(pincode);
+
+//Array Destructoring
