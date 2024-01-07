@@ -180,3 +180,21 @@ promise
 //They make asynchronous code look like synchronous code
 //They make asynchronous code easier to read and maintain
 //They are consumable
+
+const fetchNum =  async () => {
+    return 25;
+}
+
+const consoleNum = async () => {
+    const num = await fetchNum();
+    console.log(num);
+}
+
+consoleNum();
+// why this is better than promises?
+// 1. Easier to read
+// 2. Easier to maintain
+// 3. Easier to debug
+// 4. Easier to scale
+// 5. Easier to write
+
