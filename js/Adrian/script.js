@@ -14,7 +14,7 @@
 // 2. Execute the same code for multiple objects
 
 // const perosn  = {
-//     name: 'Adrian',
+//     name: 'Shubham',
 //     walk() {
 //         console.log(this);
 //     }
@@ -42,7 +42,7 @@
 //classes
 
 // const person = {
-//     name: 'Adrian',
+//     name: 'Shubham',
 //     walk() {
 //         console.log(this);
 //     }
@@ -137,7 +137,7 @@
 
 // callback hell
 
-// fetUser("Adrian", (user) => {
+// fetUser("Shubham", (user) => {
 //     console.log(user);
 //     getRepositories(user.user, (repos) => {
 //         console.log(repos);
@@ -197,4 +197,175 @@ consoleNum();
 // 3. Easier to debug
 // 4. Easier to scale
 // 5. Easier to write
+
+// Modern JavaScript EcmaScript 6 or ES6
+// 1. let and const
+// 2. Arrow functions
+// 3. Template literals
+// 4. Enhanced object literals
+// 5. Default parameters
+// 6. Rest and spread operators
+// 7. Destructuring
+// 8. Classes
+// 9. Modules
+// 10. Promises
+// 11. Async and Await
+
+// let and const
+// let and const are block scoped
+// var is function scoped
+// const cannot be reassigned
+// let can be reassigned
+// var can be reassigned
+// const and let are not hoisted
+// var is hoisted
+
+// Arrow functions
+// const square = function(number) {
+//     return number * number;
+// }
+
+// const square = (number) => {
+//     return number * number;
+// }
+
+// const square = number => number * number;
+
+// const jobs = [
+//     { id: 1, isActive: true },
+//     { id: 2, isActive: true },
+//     { id: 3, isActive: false },
+// ];
+
+// const activeJobs = jobs.filter(function(job) { return job.isActive; });
+// const activeJobs = jobs.filter(job => job.isActive);
+
+// Template literals
+// const name = "Shubham";
+// const message = "Hi " + name + ",\n";
+
+// const another = `Hi ${name} ${2 + 3},
+
+// Thank you for joining my mailing list.
+
+// Regards,
+// Shubham`;
+
+// Enhanced object literals
+// const name = "Shubham";
+// const walk = function() {
+//     console.log("walk");
+// }
+
+// const person = {
+//     name,
+//     walk,
+//     talk() {
+//         console.log("talk");
+//     }
+// };
+
+// person.talk();
+
+// Default parameters
+// const interestRate = 0.3;
+// const interestRate = 0;
+// const interestRate = null;
+// const interestRate = false;
+// const interestRate = undefined;
+// const interestRate = NaN;
+// const interestRate = "";
+// const interestRate = "0";
+// const interestRate = " ";
+// const interestRate = "Hello";
+// const interestRate = [];
+// const interestRate = {};
+// const interestRate = function() {};
+
+// const calculatePayment = (amount, interestRate = 0.1, years = 1) => {
+//     return amount * interestRate * years;
+// }
+
+// console.log(calculatePayment(100000));
+
+// Rest and spread operators
+// const numbers = [1, 2, 3, 4, 5];
+
+// const max = Math.max(numbers);
+// const max = Math.max(...numbers);
+
+// const numbers1 = [1, 2, 3];
+// const numbers2 = [4, 5, 6];
+
+// const combined = numbers1.concat(numbers2);
+// const combined = [...numbers1, ...numbers2];
+
+// const clone = [...numbers];
+
+// console.log(combined);
+// console.log(clone);
+
+// const person = { name: "Shubham" };
+// const job = { job: "Developer" };
+
+// const combined = { ...person, ...job, location: "India" };
+
+// console.log(combined);
+
+// Destructuring
+// const person = {
+//     name: "Shubham",
+//     age: 21,
+//     address: {
+//         country: "India",
+//         city: "Mumbai"
+//     }
+// };
+
+// const { name, age } = person;
+// const { country, city } = person.address;q
+
+// console.log(name, age);
+// console.log(country, city);
+
+// Classes
+// const person = {
+//     name: "Shubham",
+//     walk() {
+//         console.log("walk");
+//     }
+// };
+
+// class Person {
+//     constructor(name) {
+//         this.name = name;
+//     }
+//     walk() {
+//         console.log("walk");
+//     }
+// }
+
+// const person = new Person("Shubham");
+
+// Modules
+// import { Person } from "./person.js";
+
+// const person = new Person("Shubham");
+// person.walk();
+
+// Promises
+// const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve("Hello");
+//     }, 2000);
+// });
+
+// promise
+//     .then((result) => {
+//         console.log(result);
+//     })
+//     .catch((err) => {
+//         console.log(err.message);
+//     });
+
 
