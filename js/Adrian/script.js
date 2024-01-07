@@ -41,21 +41,21 @@
 
 //classes
 
-const person = {
-    name: 'Adrian',
-    walk() {
-        console.log(this);
-    }
-};
+// const person = {
+//     name: 'Adrian',
+//     walk() {
+//         console.log(this);
+//     }
+// };
 
-class Person {
-    constructor(name) {
-        this.name = name;
-    }
-    walk() {
-        console.log("walk");
-    }
-}
+// class Person {
+//     constructor(name) {
+//         this.name = name;
+//     }
+//     walk() {
+//         console.log("walk");
+//     }
+// }
 //Asynchronous JavaScript
 
 // Intervals and timers
@@ -64,17 +64,17 @@ class Person {
 //setTimeout()
 //clearTimeout()
 
-const myInterval = setInterval(() => {
-    console.log("Hello World");
-}, 1000);
+// const myInterval = setInterval(() => {
+//     console.log("Hello World");
+// }, 1000);
 
 
-clearInterval(myInterval);
+// clearInterval(myInterval);
 
 //setTimeout()
-const myTimeout = setTimeout(() => {
-    console.log("Hello World");
-}, 6000);
+// const myTimeout = setTimeout(() => {
+//     console.log("Hello World");
+// }, 6000);
 
 // clearTimeout(myTimeout);
 
@@ -114,26 +114,26 @@ const myTimeout = setTimeout(() => {
 
 //Data fetching with callbacks using API
 
-const fetUser = (username, callback) => {
-    setTimeout(() => {
-        console.log("Now we have the data!");
-        callback({ user: username });
-    }, 3000);
-}
+// const fetUser = (username, callback) => {
+//     setTimeout(() => {
+//         console.log("Now we have the data!");
+//         callback({ user: username });
+//     }, 3000);
+// }
 
-const getRepositories = (username, callback) => {
-    setTimeout(() => {
-        console.log("Calling GitHub API...");
-        callback(["repo1", "repo2", "repo3"]);
-    }, 2000);
-}
+// const getRepositories = (username, callback) => {
+//     setTimeout(() => {
+//         console.log("Calling GitHub API...");
+//         callback(["repo1", "repo2", "repo3"]);
+//     }, 2000);
+// }
 
-const getCommits = (repo, callback) => {
-    setTimeout(() => {
-        console.log("Calling GitHub API...");
-        callback(["commit"]);
-    }, 2000);
-}
+// const getCommits = (repo, callback) => {
+//     setTimeout(() => {
+//         console.log("Calling GitHub API...");
+//         callback(["commit"]);
+//     }, 2000);
+// }
 
 // callback hell
 
@@ -163,6 +163,20 @@ const getCommits = (repo, callback) => {
 const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve("Hello");
-        reject(new Error("Something went wrong"));
     }, 2000);
 });
+
+promise
+    .then((result) => {
+        console.log(result);
+    })
+    .catch((err) => {
+        console.log(err.message);
+    });
+
+
+//Asyncs and Await
+//Asyncs and Await are syntactic sugar for promises
+//They make asynchronous code look like synchronous code
+//They make asynchronous code easier to read and maintain
+//They are consumable
