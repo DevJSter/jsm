@@ -18,3 +18,6 @@ console.log(counter11);
 //setInterval will be executed after every 100 ms
 //setInterval is good for async programming
 //setInterval is not good for callback hell
+
+
+    
