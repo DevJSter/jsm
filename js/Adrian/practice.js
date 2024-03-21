@@ -381,7 +381,7 @@ For example: */
 // 5+ parseFloat('5') = 10 // this is because of the type coercion
 // 5+ +'5' = 10 // this is because of the type coercion
 // 5+ -'5' = 0 // this is because of the type coercion
-// GitHub Copilot: Type coercion is the process of converting a value from one data type to another in JavaScript. It happens implicitly or explicitly. Implicit coercion happens when JavaScript automatically converts a value from one type to another, while explicit coercion happens when a developer manually converts a value from one type to another. 
+// Type coercion is the process of converting a value from one data type to another in JavaScript. It happens implicitly or explicitly. Implicit coercion happens when JavaScript automatically converts a value from one type to another, while explicit coercion happens when a developer manually converts a value from one type to another. 
 // In the provided code excerpt, the plus operator is used to add a number and a string. JavaScript implicitly coerces the string into a number, resulting in the concatenation of the two values instead of their addition.Type coercion is the process of converting a value from one data type to another in JavaScript. It happens implicitly or explicitly. Implicit coercion happens when JavaScript automatically converts a value from one type to another, while explicit coercion happens when a developer manually converts a value from one type to another. 
 // In the provided code excerpt, the plus operator is used to add a number and a string. JavaScript implicitly coerces the string into a number, resulting in the concatenation of the two values instead of their addition.
 // '5'--'5' =10 // this is because of the type coercion
