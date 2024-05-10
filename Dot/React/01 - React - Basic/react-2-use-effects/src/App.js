@@ -10,14 +10,14 @@ function App() {
   }
 
   // Variation1 - Every Render 
-  useEffect(() => {
-    console.log("UI Renderer changed")
-  });
+  // useEffect(() => {
+  //   console.log("UI Renderer changed")
+  // });
 
   // Variation2 - First Render
-  useEffect(() => {
-    console.log("UI Renderer changed");
-  },[]);
+  // useEffect(() => {
+  //   console.log("UI Renderer changed");
+  // },[]);
 
   // Variation3 - On First Render + Whenever Dependencies CHanges
   useEffect(() => {
