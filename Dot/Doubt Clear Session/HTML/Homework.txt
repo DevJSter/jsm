@@ -1,4 +1,0 @@
-Question1 - Can we Embedd Yotube Video
-Answer : Yes
-
-Question2 - Create webpage and use audio,video and iframe
