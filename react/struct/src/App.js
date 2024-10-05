@@ -1,12 +1,8 @@
-import HomePage from "./pages/HomePage";
+import React from "react";
+import ReactPDF from "@intelllex/react-pdf";
 
+const ExampleReactPDF = () => {
+  return <ReactPDF url="<PDF_url>" showProgressBar showToolbox />;
+};
 
-function App() {
-  return (
-    <div className="bg-darkGreen">
-      <HomePage />
-    </div>
-  );
-}
-
-export default App;
+export default ExampleReactPDF;
